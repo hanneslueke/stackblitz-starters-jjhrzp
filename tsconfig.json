@@ -16,15 +16,21 @@
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
-    "target": "ES2015",
-    "module": "ES2022",
-    "useDefineForClassFields": false,
-    "lib": ["ES2022", "dom"]
+    "target": "es2017",
+		"module": "esnext",
+		"lib": ["es2021", "dom"],
+
+    "useDefineForClassFields": false, 
+    "skipLibCheck": true,
+		"skipDefaultLibCheck": true,
+
   },
   "angularCompilerOptions": {
-    "enableI18nLegacyMessageIdFormat": false,
-    "strictInjectionParameters": true,
-    "strictInputAccessModifiers": true,
-    "strictTemplates": true
+    "enableI18nLegacyMessageIdFormat": false, 
+    "experimentalDecorators": true,
+		"strictInjectionParameters": true,
+		"strictInputAccessModifiers": true,
+		"strictTemplates": false
+
   }
 }
