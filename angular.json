@@ -3,6 +3,7 @@
   "cli": {
     "analytics": "1e1de97b-a744-405a-8b5a-0397bb3d01ce"
   },
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "demo": {
@@ -12,14 +13,14 @@
           "configurations": {
             "development": {
               "extractLicenses": false,
-              "namedChunks": true,
+               
               "optimization": false,
               "sourceMap": true
             },
             "production": {
               "aot": true,
               "extractLicenses": true,
-              "namedChunks": false,
+               
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false
@@ -51,10 +52,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "development": {
-              "buildTarget": "demo:build:development"
+              "browserTarget": "demo:build:development"
             },
             "production": {
-              "buildTarget": "demo:build:production"
+              "browserTarget": "demo:build:production"
             }
           },
           "defaultConfiguration": "development"
@@ -66,6 +67,5 @@
       "schematics": {},
       "sourceRoot": "src"
     }
-  },
-  "version": 1
+  }
 }

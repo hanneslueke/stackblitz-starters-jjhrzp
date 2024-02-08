@@ -81,6 +81,7 @@ Highcharts.setOptions({
   ],
   standalone: true,
   template: `
+  t
   <highcharts-chart
     
     [Highcharts]="Highcharts"
@@ -111,10 +112,11 @@ export class App {
     this.chartCallback =  (c: Highcharts.Chart) => {
 			if (this.chart == null) {
 				this.chart = c;
+        
 			} 
 		};
 
   }
 }
 
-bootstrapApplication(App);
+bootstrapApplication(App).catch(e => console.log(e));

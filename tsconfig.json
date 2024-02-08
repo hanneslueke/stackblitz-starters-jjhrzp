@@ -20,7 +20,7 @@
 		"module": "esnext",
 		"lib": ["es2021", "dom"],
 
-    "useDefineForClassFields": false, 
+    "useDefineForClassFields": true, 
     "skipLibCheck": true,
 		"skipDefaultLibCheck": true,
 
