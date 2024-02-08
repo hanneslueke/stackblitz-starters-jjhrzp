@@ -76,9 +76,9 @@ Highcharts.setOptions({
 
 @Component({
   selector: 'app-root',
-  import: [
+  imports: [
     HighchartsChartModule
-  ]
+  ],
   standalone: true,
   template: `
   <highcharts-chart
